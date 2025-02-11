@@ -1,0 +1,115 @@
+/* Burgundy Theme */
+$primary-color: #800020;
+$secondary-color: #ffffff;
+$background-color: #f8f1f1;
+$button-hover-color: #a52a2a;
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: $background-color;
+    color: $primary-color;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling the form */
+form {
+    background: $primary-color;
+    color: $secondary-color;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 12px;
+    width: calc(100% - 20px); /* Ensures inputs stay within container */
+    max-width: 350px; /* Prevents inputs from overflowing */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures width includes padding */
+}
+
+input {
+    background: #fff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    text-align: center; /* Center input text */
+}
+
+button {
+    background: $secondary-color;
+    color: $primary-color;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: $button-hover-color;
+    color: $secondary-color;
+}
+
+/* Styling the trip info box */
+#trip-info {
+    background: $secondary-color;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    text-align: center;
+}
+
+#trip-info img {
+    border-radius: 8px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* Saved trips section */
+.saved-trips {
+    margin-top: 30px;
+}
+
+.trip {
+    background: $secondary-color;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    input, button {
+        width: 90%;
+    }
+
+    #trip-info {
+        width: 90%;
+    }
+}

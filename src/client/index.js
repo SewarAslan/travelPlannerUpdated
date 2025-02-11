@@ -1,0 +1,10 @@
+import "./styles/style.scss";
+import { handleSubmit } from "./js/app";
+
+document.getElementById("travel-form").addEventListener("submit", handleSubmit);
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker Registered"))
+        .catch((error) => console.log("Service Worker Registration Failed", error));
+}
