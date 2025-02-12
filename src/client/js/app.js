@@ -81,6 +81,12 @@ const removeTrip = (index) => {
     localStorage.setItem("trips", JSON.stringify(trips));
     loadSavedTrips();
 };
+window.removeTrip = (index) => {
+    let trips = JSON.parse(localStorage.getItem("trips")) || [];
+    trips.splice(index, 1);
+    localStorage.setItem("trips", JSON.stringify(trips));
+    loadSavedTrips();
+};
 
 document.getElementById("travel-form").addEventListener("submit", handleSubmit);
 document.addEventListener("DOMContentLoaded", loadSavedTrips);
