@@ -15,6 +15,13 @@ This Travel Planner App allows users to:
   - ☁️ **Weatherbit API** → Get current & future weather.
   - 📷 **Pixabay API** → Fetch images for the location.
 
+## 🔧 Prerequisites
+- Ensure you have **Node.js 18+** installed.  
+  Check your version using:
+  ```bash
+  node -v
+
+
 ## 📜 Installation & Usage
 ### 1️⃣ Clone the repository:
 ```bash
@@ -29,13 +36,12 @@ GEONAMES_USERNAME=your_username
 WEATHERBIT_API_KEY=your_api_key
 PIXABAY_API_KEY=your_api_key
 4️⃣ Run the project:
-Development Mode (Live Reload)
-
+*Development Mode (Live Reload)*
 npm run dev
-Production Build
-
+*Production Build*
 npm run build
 npm start
+
 🎯 Features Implemented
 ✔️ City search & weather forecast
 ✔️ Trip countdown
@@ -50,4 +56,4 @@ npm start
 📅 Auto-sort trips by countdown.
 📜 Export trip details to PDF.
 👨‍💻 Developer
-👋 Developed by Your Name | 📧 your.email@example.com
+👋 Developed by Sewar Aslan | 📧 your.email@example.com
