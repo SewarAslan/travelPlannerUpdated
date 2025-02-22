@@ -56,4 +56,4 @@ npm start
 📅 Auto-sort trips by countdown.
 📜 Export trip details to PDF.
 👨‍💻 Developer
-👋 Developed by Sewar Aslan | 📧 your.email@example.com
+👋 Developed by Sewar Aslan | 📧 sewaraslan02@gmil.com
