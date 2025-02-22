@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static("dist"));
 const GEONAMES_USERNAME = process.env.GEONAMES_USERNAME;
 const WEATHERBIT_API_KEY = process.env.WEATHERBIT_API_KEY;
 const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
@@ -78,5 +78,8 @@ if (process.env.NODE_ENV !== "test") {
     });
 }
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "src/client/views/index.html"));
+});
 // Export app and server for testing
 module.exports = app;
