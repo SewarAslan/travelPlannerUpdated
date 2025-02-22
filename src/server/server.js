@@ -79,7 +79,7 @@ if (process.env.NODE_ENV !== "test") {
 }
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "src/client/views/index.html"));
+    res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 // Export app and server for testing
 module.exports = app;
