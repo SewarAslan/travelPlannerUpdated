@@ -36,12 +36,13 @@ GEONAMES_USERNAME=your_username
 WEATHERBIT_API_KEY=your_api_key
 PIXABAY_API_KEY=your_api_key
 4️⃣ Run the project:
-*Development Mode (Live Reload)*
-npm run dev
+
 *Production Build*
 npm run build
 npm start
 
+*Development Mode (Live Reload)*
+npm run dev
 🎯 Features Implemented
 ✔️ City search & weather forecast
 ✔️ Trip countdown
