@@ -51,10 +51,5 @@ npm run dev
 ✔️ LocalStorage for saving trips
 ✔️ Fully responsive UI
 
-📌 Future Enhancements (Optional)
-🌍 Allow users to add multiple destinations.
-🏨 Add hotel & flight booking options.
-📅 Auto-sort trips by countdown.
-📜 Export trip details to PDF.
-👨‍💻 Developer
-👋 Developed by Sewar Aslan | 📧 your.email@example.com
+
+👋 Developed by Sewar Aslan | 📧 sewaraslan02@gmail.com
